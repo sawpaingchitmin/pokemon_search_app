@@ -1,0 +1,180 @@
+:root {
+    --color1: #090933;
+    --color2: #222224;
+    --color3: #f5f5fa;
+    --color4: #5469c7;
+    --color5: #e8e8ed;
+    --color6: #8430f2;
+  }
+  
+  body {
+    height: 100vh;
+    background-color: var(--color1);
+    color: var(--color2);
+    font-family: Sans-serif;
+    font-size: 10px;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h1 {
+    color: var(--color3);
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    width: 400px;
+    background-color: var(--color3);
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 8px 8px 2px rgba(255, 255, 255, 0.4);
+    padding: 20px;
+  }
+  
+  #search-form {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+  
+  #search-form label {
+    margin-bottom: 10px; 
+  }
+  
+  #search-form input,
+  #search-form button {
+    margin-bottom: 10px; 
+  }
+  
+  #search-input {
+    width: 200px;
+    height: 40px;
+    padding-left: 8px;
+    border: 0.5px solid var(--color2);
+    border-radius: 4px;
+  }
+  
+  #search-button {
+    padding: 12px;
+    width: 90px;
+    border-radius: 18px;
+    background-color: var(--color4);
+    color: var(--color5);
+    border: none;
+  }
+  
+  .top-container {
+    min-height: 250px;
+  }
+  
+  .top-container,
+  .bottom-container {
+    margin-bottom: 10px;
+  }
+  
+  #pokemon-name {
+    font-size: 1.2rem;
+  }
+  
+  #pokemon-id {
+    font-size: 1rem;
+  }
+  
+  .size {
+    margin-top: 10px;
+  }
+  
+  #weight, #height {
+    padding-top: 10px;
+    font-size: 0.8rem;
+  }
+  
+  #sprite {
+    width: 180px;
+    height: auto;
+    margin-left: 115px;
+  }
+  
+  #types {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+  }
+  
+  #types div {
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: bold;
+    color: var(--color5);
+    background-color: var(--color6);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--color4); 
+    color: var(--color5);
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+    background-color: var(--color4); 
+    color: var(--color5);
+  }
+  
+  th:nth-child(even),
+  td:nth-child(even) {
+    border-left: 5px solid var(--color5);
+  }
+  
+  tr {
+    border-bottom: 5px solid var(--color5);
+  }
+  
+  @media screen and (max-width: 600px) {
+    .container {
+      width: 75%; 
+      margin: 10px auto; 
+      padding: 15px;
+    }
+  
+    #search-input {
+      width: 75%; 
+      height: 35px;
+    }
+  
+    #search-button {
+      width: 80px;
+      padding: 10px;
+      border-radius: 16px;
+    }
+  
+    #sprite {
+      width: 150px; 
+      margin-left: 25%;
+    }
+  
+    #types div {
+      margin-right: 8px;
+      padding: 8px;
+    } 
+  
+    th, td {
+      padding: 8px;
+    }
+  
+    tr {
+      border-bottom: 3px solid var(--color5); 
+    }
+  }
